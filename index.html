@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="./script.js" type="module" defer></script>
+    <script src="https://kit.fontawesome.com/28c9b452c3.js" crossorigin="anonymous"></script>
+    <title>Music Player</title>
+</head>
+<body>
+    <div class="player">
+        <div id="nav" class="nav">
+            <span><i class="fa-solid fa-music"></i> Music player</span>
+            <i id="bars" class="fa-solid fa-bars"></i>
+        </div>
+        <img id="img" src="./assets/logo.png">
+        <div class="details">
+            <marquee id="song">song name</marquee>
+            <span id="artist">artist</span>
+        </div>
+        <audio id="audio"></audio>
+        <div id="progress-bar">
+            <div id="thumb"></div>
+            <div id="current-progress"></div>
+        </div>
+        <div class="controls">
+            <div id="add" title="Add to favorites">
+                <i class="fa-solid fa-plus"></i>
+            </div>
+            <div id="prev" title="Previous">
+                <i class="fa-solid fa-backward-step"></i>
+            </div>
+            <div id="play" title="Play/Pause">
+                <i id="playPause" class="fa-solid fa-play"></i>
+            </div>
+            <div id="next" title="Next">
+                <i class="fa-solid fa-forward-step"></i>
+            </div>
+            <div id="shuffle" title="Shuffle">
+                <i class="fa-solid fa-shuffle"></i>
+            </div>
+        </div>
+    </div>
+    <div id="favorites" class="favorites">
+        <span class="header">Favourites</span>
+        <div id="favoriteList" class="favoriteList"></div>
+    </div>
+    <section id="bg"></section>
+</body>
+</html>

@@ -1,0 +1,245 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    color: #fff;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+.nav
+{
+    align-self: flex-start;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+}
+.nav span
+{
+    margin-left: 15%;
+    font-size: 20px;
+}
+#bars
+{
+    display: grid;
+    place-items: center;
+    margin-right: 10%;
+    width: 40px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px);
+    cursor: pointer;
+}
+.player
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 350px;
+    height: 500px;
+    max-height: 550px;
+    border-radius: 5px;
+    gap: 10px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px);
+}
+img
+{
+    width: 70%;
+    aspect-ratio: 1/1;
+    padding: 10px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+.details
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    flex-direction: column;
+}
+#song
+{
+    font-size: 20px;
+}
+#artist
+{
+    font-size: 15px;
+}
+#progress-bar {
+    position: relative;
+    width: 80%;
+    height: 5px;
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 5px;
+    cursor: pointer;
+}
+#thumb
+{
+    position: absolute;
+    top: -60%;
+    translate: -50%;
+    width: 10px;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    background-color: #fff;
+    cursor: pointer;
+}
+#current-progress {
+    height: 100%;
+    background-color: #fff;
+    width: 0;
+    border-radius: 5px;
+}
+.controls
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.controls div
+{
+    display: grid;
+    place-items: center;
+    width: 50px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    cursor: pointer;
+}
+.controls div:hover
+{
+    filter: brightness(5);
+    background-color: rgba(255, 255, 255, 0.15);
+    transform: scale(1.05);
+}
+#play
+{
+    width: 60px;
+    color: #fff;
+}
+.header
+{
+    margin-top: 10px;
+}
+.favorites, .favoriteList
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 350px;
+    height: 500px;
+    flex-direction: column;
+    border-radius: 5px;
+    gap: 5px;
+    overflow: hidden;
+}
+.favorites
+{
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+.show
+{
+    position: relative;
+    opacity: 100%;
+    animation: in 0.2s linear forwards;
+    z-index: 0;
+}
+@keyframes in
+{
+    0%
+    {
+        transform: translateX(-50px);
+    }
+    100%
+    {
+        transform: translateX(0px);
+    }
+}
+.icon
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+.icon img
+{
+    width: 50px;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+}
+.favorites .details
+{
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 80%;
+    height: 50px;
+    padding: 5px;
+    flex-direction: row;
+    gap: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.favorites .details:hover
+{
+    background-color: rgba(255, 255, 255, 0.15);
+}
+.favorites .details #song
+{
+    font-size: 15px;
+}
+.remove
+{
+    position: absolute;
+    right: 15px;
+    font-size: 15px;
+    visibility: hidden;
+}
+.favorites .details:hover .remove
+{
+    visibility: visible;
+}
+section
+{
+    transition: 0.2s;
+    position: absolute;
+    width: 100vw;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(40px);
+    transform: scale(1.5);
+    z-index: -2;
+}

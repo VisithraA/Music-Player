@@ -1,0 +1,32 @@
+[
+    {
+      "title": "Mudhal Kanave Mudhal Kanave",
+      "artist": " Bombay Jayashri, Harish Raghavendra, O.s. Arun",
+      "image": "./images/majnu.jfif",
+      "path":"./audio/Mudhal Kanave Mudhal Kanave.mp3"
+    },
+    {
+      "title": "Thodu-Vaanam",
+      "artist": "Hariharan, Harris Jayaraj, Shakthisree Gopalan",
+      "image": "./images/anegan.jfif",
+      "path": "./audio/Thodu-Vaanam.mp3"
+    },
+    {
+      "title": "Unnaale Unnaale",
+      "artist": "Krish, Karthik, Harini",
+      "image": "./images/unnale.jfif",
+      "path": "./audio/Unnaale Unnaale.mp3"
+    },
+    {
+      "title": "Lesa Lesa",
+      "artist": " Harris Jayaraj",
+      "image": "./images/lesa.jfif",
+      "path": "./audio/Lesa Lesa.mp3"
+    },
+    {
+        "title": "Venmathi Venmathiye",
+        "artist": " Harris Jayaraj",
+        "image": "./images/venmathiye.jfif",
+        "path": "./audio/Venmathi Venmathiye.mp3"
+    }
+  ]
